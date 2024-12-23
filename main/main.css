@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Jua&family=Madimi+One&family=Moirai+One&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap');
+
+  
+:root{   
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bagel-fat one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*배경*/
+body{
+    background: linear-gradient(180deg,#b4cff8 , #cbdde9 50%);
+}
+
+img{
+    max-width: 100%;
+}
+
+/*메뉴바*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation li{
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .navigation li a{
+    text-decoration: none;
+    padding:  6px 15px;
+    color: #003049;
+    border-radius: 20px;
+    font-size: clamp(0.9rem, 6vw, 1.2rem);
+  }
+
+  .navigation a:hover,
+  .navigation li a.active {
+   background: #ece6d3;
+   color: #b20606;
+}
+
+/*제목*/
+.one{
+    img{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0 auto;
+
+    > :nth-child(1){
+        transform: rotate(-5deg) skew(-5deg);
+    }
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    max-width: 450px;
+    color: #b20606;
+    text-shadow: 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+    font-family: "Bagel Fat One", system-ui;
+}
+
+p{
+    font-size: 1.25rem;
+    color: #003049;
+    display: inline-block;
+    background: #ece6d3;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0 #c0bfb2;
+}
+
+.container{
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-shadow: o.25rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 800;
+	color: #003049;
+	text-shadow: 0.125rem 0.125rem 0 #c0bfb2;
+	transform: rotate(-5deg) skew(-5deg) translateY(-1rem);
+	margin-bottom: 1rem;
+}
+
+.menus{
+  position: relative;
+  margin: 0 auto;
+  margin-top: -3.5rem;/*만리장성이미지 위로올리기*/
+  margin-bottom: 0 auto;
+  padding: 4rem;
+  
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 893 / 373;
+    background: url("배경만리장성.png");
+    background-repeat: no-repeat;/*반복여부*/
+    background-position: center center;/*백그라운드 이미지 위치*/
+    background-size: 150%;/*백그라운드 이미지 크기*/
+	z-index: -1;
+  }
+}
+
+.menus-wrapper {
+	display: flex;
+	display: grid;
+	justify-content: center;
+	gap: 2rem;
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+
+	grid-auto-columns: 320px;
+	margin-bottom: 2rem;
+
+	.menu{
+		display: grid;
+		background: rgba(255, 255, 255, 0.8);
+		box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.1);
+		border-radius: 9rem;
+		padding: 1rem 0.3rem 1rem 0.3rem;
+		text-align: center;
+	}/*메뉴 도형*/
+
+	img {
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 10rem;
+	}
+
+	p {
+		margin: 0 2rem;
+		line-height: 1.5;
+	}
+  
+}
+/*클릭 hover 효과/Copyright (c) 2024 by Paul (https://codepen.io/Paul2512C/pen/JxKvpb)*/
+
+.menus-wrapper .menu:hover{
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.menus .menus-wrapper .menu:hover,
+.menus .menus-wrapper .menu:hover~.bg{
+  opacity: 1;
+  background: #ffffff;
+background: rgba(0, 0, 0, 0.3)
+}
+
+
+/*반응형*/
+@media (min-width: 768px) {
+	.one {
+		.container {
+			flex-direction: row;
+		}
+    }    
+
+	.menus-wrapper {
+		grid-template-columns: repeat(3, auto);
+	}
+  
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉬워쉬워 | 챗봇 </title>
+    <link rel="stylesheet" href="chat2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="call" class="user-bar">
+            <div class="back">
+            <i class="zmdi zmdi-arrow-left"></i>
+          </div>
+          <div class="avatar">
+          <img src="/로고.png" alt="Avatar">
+          </div>
+          <div class="name">
+            <span id="name">jjeongni_03</span>
+            <i class="fas fa-comments">‌</i>
+          </div>
+          <div class="actions more">
+            <i class="fas fa-grip-vertical">‌</i>
+          </div>
+          <div class="actions attachment">
+            <i class="fas fa-paperclip">‌</i>
+         </div>
+          <div  class="actions">
+            <i class="fas fa-phone">‌</i>
+          </div>
+        </div>
+        
+        <div id="messages"></div>  
+        <div id="user-input-container">
+          <input type="text" id="user-input" placeholder="메시지를 입력하세요...">
+          <button id="start-recognition"><i class="fas fa-microphone">‌시작</i></button>
+          <button id="stop-recognition"><i class="fas fa-microphone-slash">‌중지</i></button>
+          <button id="send-btn"><i class="fas fa-location-arrow">‌보내기</i></button>
+        </div>
+        </div>
+        
+    </div>
+
+    <script src="chat2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=zz1dFgnN"></script>
+</body>
+</html>

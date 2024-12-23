@@ -1,0 +1,100 @@
+<!--index.html-->
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0" /> 
+	<title>쉬워쉬워 | chānzá & chānzá</title>
+    <link rel="shortcut icon" href="/로고.png">
+	<link href="/word/word.css" rel="stylesheet" /> 
+    <script async type="text/javascript" src="/word/gg.js"></script>
+    <link rel="stylesheet" href="TemplateData/style.css">
+</head> 
+
+<body> 
+       <!--햄버거메뉴-->
+       <div class="wrapper">
+  
+        <div class="top_navbar">
+          <div class="hamburger">
+             <div class="one"></div>
+             <div class="two"></div>
+             <div class="three"></div>
+          </div>
+          <div class="top_menu">
+            <div class="logo">
+              *XueXue*쉬워쉬워*
+            </div>
+            <ul class="navigation">
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="/conversation/cvs.html">회화</a></li>
+              <li><a href="/card/card.html">단어</a></li>
+              <li><a href="/quiz/quiz.html">퀴즈</a></li>
+              <li><a href="/noticeboard/index.html">Q&A</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="sidebar">
+            <ul>
+              <li><a href="/quiz/quiz.html">
+                <span class="icon"><i class="fas fa-home">‌</i></span>
+                <span class="title">퀴즈 Home</span>
+                </a></li>
+              <li><a href="/cardgame/index.html">
+                <span class="icon"><i class="fas fa-paint-brush">‌</i></span>
+                <span class="title">요시->요시</span>
+                </a></li>
+              <li><a href="/dad1/index.html">
+                <span class="icon"><i class="fas far fa-hand-point-up">‌</i></span>
+                <span class="title">투어팡&투어팡</span>
+                </a></li>
+              <li><a href="/danci/index.html">
+                <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                <span class="title">단츠&단츠</span>
+                </a></li>
+            <li><a href="/word/word.html">
+                <span class="icon"><i class="fas fa-language"></i></span>
+                <span class="title">찬자&찬자</span>
+                </a></li>
+          </ul>
+        </div>
+        
+        <div class="main_container">
+        
+        </div>
+      </div>
+</body>  
+<div class="root"> 
+    <br><br>
+    <h1 class="title">찬자 & 찬자</h1><br><br><br>
+    <div id="scrambled"> 
+        <h2 id="scrambleWord">Word</h2> 
+        <br><br><p id="hint"></p> 
+    </div> 
+    <div id="form"> 
+        <br><br><br><br>
+        <input id="input"
+            type="text"
+            placeholder="단어의 순서를 맞춰 입력해보세요!" /> 
+    </div><br><br><br>
+    <h3 id="output">결과:</h3><br><br><br>
+    <div class="foot"> 
+        <button type="button"
+                onclick="check()"> 
+            제출하기 
+        </button> 
+        <button type="button"
+                onclick="refresh()"> 
+            다시하기 
+        </button> 
+    </div> 
+</div> 
+
+<script src="/word/word.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</html>

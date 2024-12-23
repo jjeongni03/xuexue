@@ -1,0 +1,134 @@
+<!--Copyright (c) 2024 by Margaux Darriberouge (https://codepen.io/Margaux-dev/pen/eYJGYqp)-->
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉬워쉬워 | chānzá & chānzá</title>
+      <link rel="shortcut icon" href="/로고.png">
+    <link href="/word/word.css" rel="stylesheet" /> 
+      <script async type="text/javascript" src="/word/gg.js"></script>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="memory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+  </head>
+
+  <body> 
+         <!--햄버거메뉴-->
+         <div class="wrapper">
+    
+          <div class="top_navbar">
+            <div class="hamburger">
+               <div class="one"></div>
+               <div class="two"></div>
+               <div class="three"></div>
+            </div>
+            <div class="top_menu">
+              <div class="logo">
+                *XueXue*쉬워쉬워*
+              </div>
+              <ul class="navigation">
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/conversation/cvs.html">회화</a></li>
+                <li><a href="/card/card.html">단어</a></li>
+                <li><a href="/quiz/quiz.html">퀴즈</a></li>
+                <li><a href="/noticeboard/index.html">Q&A</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="sidebar">
+              <ul>
+                <li><a href="/quiz/quiz.html">
+                  <span class="icon"><i class="fas fa-home">‌</i></span>
+                  <span class="title">퀴즈 Home</span>
+                  </a></li>
+                <li><a href="/cardgame/index.html">
+                  <span class="icon"><i class="fas fa-paint-brush">‌</i></span>
+                  <span class="title">요시->요시</span>
+                  </a></li>
+                <li><a href="/dad1/index.html">
+                  <span class="icon"><i class="fas far fa-hand-point-up">‌</i></span>
+                  <span class="title">투어팡&투어팡</span>
+                  </a></li>
+                <li><a href="/danci/index.html">
+                  <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                  <span class="title">단츠&단츠</span>
+                  </a></li>
+              <li><a href="/memory/memory.html">
+                  <span class="icon"><i class="fas fa-language"></i></span>
+                  <span class="title">찬자&찬자</span>
+                  </a></li>
+            </ul>
+          </div>
+          
+          <div class="main_container">
+          
+          </div>
+        </div>
+
+  </body>
+  <div class="body">
+    <h1>찬자&찬자</h1>
+    <section class="memory-game">
+      <!-- Icons made by Freepik from www.flaticon.com -->
+      <div class="memory-card" data-card="hamburger">
+        <img class="front-face" src="/memory/단어/계절카드/여름.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="hamburger">
+        <img class="front-face" src="/memory/단어/여름.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="hotdog">
+        <img class="front-face" src="/memory/단어/과일카드/망고.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="hotdog">
+        <img class="front-face" src="/memory/단어/망고.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="cocktail">
+        <img class="front-face" src="/memory/단어/신체카드/눈.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="cocktail">
+        <img class="front-face" src="/memory/단어/눈.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="sandcastle">
+        <img class="front-face" src="/memory/단어/신체카드/어깨.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="sandcastle">
+        <img class="front-face" src="/memory/단어/어깨.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="maracas">
+        <img class="front-face" src="/memory/단어/과일카드/용과.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="maracas">
+        <img class="front-face" src="/memory/단어/용과.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="ball">
+        <img class="front-face" src="/memory/단어/음식카드/피자.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+      <div class="memory-card" data-card="ball">
+        <img class="front-face" src="/memory/단어/피자.png">
+        <img class="back-face" src="/memory/만리장성.png">
+      </div>
+
+    </section>
+    <div id="youWin" style="display: none">
+      <h2>You win!</h2>
+      <button onClick="window.location.reload(false)">Restart</button>
+    </div>
+  </div>
+  <script src="memory.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</html>
+

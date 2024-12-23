@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Jua&family=Madimi+One&family=Moirai+One&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap');
+
+  
+:root{   
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bagel-fat one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Jua&family=Madimi+One&family=Moirai+One&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap');
+
+:root{   
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+/*햄버거*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Jua", sans-serif;
+  }
+  
+  .wrapper{
+    margin: 10px;
+  }
+  
+  .wrapper .top_navbar{
+    width: calc(100% - 20px);
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 10px;
+  }
+  
+  .wrapper .top_navbar .hamburger{
+    width: 70px;
+    height: 100%;
+    background: #b20606;
+    padding: 15px 17px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .wrapper .top_navbar .hamburger div{
+    width: 35px;
+    height: 4px;
+    background: #ece6d3;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .wrapper .top_navbar .top_menu{
+    width: calc(100% - 70px);
+    height: 100%;
+    background: #fff;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+  
+  .wrapper .top_navbar .top_menu .logo{
+    color: #b20606;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-left: 1rem;
+    font-family: "Bagel Fat One", system-ui;
+  }
+  
+  .wrapper .top_navbar .top_menu ul{
+    display: flex;
+  }
+  
+  .wrapper .top_navbar .top_menu ul li a{
+    display: block;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ece6d3;;
+    border-radius: 50%;
+    color: #003049;
+  }
+  
+  .wrapper .top_navbar .top_menu ul li a:hover{
+    background: #ece6d3;
+   color: #b20606;
+  }
+  
+  .wrapper .top_navbar .top_menu ul li a:hover i{
+    color: #fff; /*탑 메뉴바 색상*/
+  }
+  
+  .wrapper .sidebar{/*슬라이더 바탕*/
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    background: #ece6d3;
+    width: 200px;
+    height: calc(100% - 80px);
+    border-bottom-left-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper .sidebar ul li a{/*슬라이더 글씨*/
+      display: block;
+      padding: 20px;
+      color: #fff;
+      position: relative;
+      margin-bottom: 1px;
+      color: #003049;
+      white-space: nowrap;
+  }
+  
+  .wrapper .sidebar ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background:  #b20606;
+    display: none;
+  }
+  
+  .wrapper .sidebar ul li a span.icon{
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .wrapper .sidebar ul li a span.title{
+    display: inline-block;
+  }
+  
+  .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+    background: #ece6d3;
+   color: #b20606;
+  }
+  
+  .wrapper .sidebar ul li a:hover:before,
+  .wrapper .sidebar ul li a.active:before{
+    display: block;
+  }
+  
+  .wrapper .main_container{
+    width: (100% - 200px);
+    margin-top: 70px;
+    margin-left: 200px;
+    padding: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper .main_container .item{
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .wrapper.collapse .sidebar{
+    width: 70px;
+  }
+  
+  .wrapper.collapse .sidebar ul li a{
+    text-align: center; 
+  }
+  
+  .wrapper.collapse .sidebar ul li a span.icon{
+    margin: 0;
+  }
+  
+  .wrapper.collapse .sidebar ul li a span.title{
+    display: none;
+  }
+  
+  .wrapper.collapse .main_container{
+    width: (100% - 70px);
+    margin-left: 70px;
+  }
+  
+/*이미지슬라이드*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	align-items: center;
+	background-image: linear-gradient(180deg,#b4cff8 , #cbdde9 50%);
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.swiper-container{
+  align-items: center;
+  margin-left: 30rem;
+}
+
+.swiper-slide {
+	width: 400px;
+}
+
+.swiper-slide:nth-child(1) .slider-text {
+	background-image: url('/card/계절카드/봄.png');
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide:nth-child(2) .slider-text {
+	background-image: url('/card/계절카드/여름.png');
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide:nth-child(3) .slider-text {
+	background-image: url('/card/계절카드/가을.png');
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide:nth-child(4) .slider-text {
+	background-image: url('/card/계절카드/겨울.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.card { /*카드 모형*/
+  border-radius: 2rem;
+	background-color: #ffffff;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	width: 400px;
+  border-radius: 2rem;
+	text-decoration: none;
+	font-weight: 400;	
+	transition: .15s ease;
+	overflow: hidden;
+
+	/*카드선택 테두리 도형*/
+	&:hover, &:focus {
+		outline: none;
+		box-shadow: 0 0 0 0.25rem pink;
+		.product-content {
+			border-color: transparent;
+		}
+	}
+}
+
+.card .content1 {
+	padding: 10px;
+	width: 400px;
+  font-size: 2rem;
+  text-align: center;/*텍스트정렬*/
+  font-family: "ZCOOL XiaoWei", sans-serif;
+}
+.card .content2 {
+	padding: 10px;
+	width: 400px;
+  font-size: 2rem;
+  text-align: center;/*텍스트정렬*/
+  font-family: "Jua", sans-serif;
+}
+
+
+.card .content1 a {
+	color: #262626;
+	display: inline-block;
+	font-weight: 400;
+	margin: 10px 0 0;
+  margin-left: 20rem;
+  margin-top: -50rem;
+	padding: 10px 20px;
+	text-decoration: none;
+  background-image: url('/음성.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.card .slider-text {
+	align-items: center;
+	background-color: #eecbcb;
+	display: flex;
+	height: 350px; /*카드 아래 컨텐츠 크기*/
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+.card .slider-text h3 {
+	color: #f18585;
+	font-size: 5rem;
+  text-shadow: 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  font-family: "ZCOOL XiaoWei", sans-serif;
+}
+
+
+@media(max-width: 768px){
+  .card{
+    flex-direction: row;
+  } 
+  
+}
+

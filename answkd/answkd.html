@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="answkd.css" />
+    <title>쉬워쉬워 | 회화</title>
+    <link rel="icon" type="image/png" href="/로고.png">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="board">
+          <div class="target-lang-container">
+            <img class="avatar-img" src="./assets/lara-woman.svg" />
+            <div class="speech-bubble">
+              <div class="sent-container">
+                <!-- <img id="speaker" src="/assets/speaker.svg" /> -->
+                <!-- <span>Parles</span>
+                <span>-</span>
+                <span>tu</span>
+                <span class="space"></span>
+                <span>francais</span>
+                <span>?</span> -->
+              </div>
+            </div>
+          </div>
+          <div class="answer-field"></div>
+          <div class="random-words-field">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-items-container">
+          <div class="item left">
+            <button>넘기기</button>
+          </div>
+          <div class="item"></div>
+          <div class="item center">
+          </div>
+          <div class="item"></div>
+          <div class="item right">
+            <button class="check-button">제출</button>
+          </div>
+        </div>
+      </div>
+      <div class="win-footer">
+        <div class="footer-items-container">
+          <div class="item left">
+            <div class="sign-container">
+              <img src="https://res.cloudinary.com/nzmai/image/upload/v1605791181/icons/check.png"/>
+            </div>
+            <div class="desc-container">
+              <span class="motivational-word">잘했어요!</span>
+              <span class="report">REPORT</span>
+            </div>
+            
+          </div>
+          <div class="item"></div>
+          <div class="item center">
+          </div>
+          <div class="item"></div>
+          <div class="item right">
+            <button class="continue-button">계속</button>
+          </div>
+        </div>
+      </div>
+      <div class="lose-footer">
+        <div class="footer-items-container">
+          <div class="item left">
+            <div class="sign-container">
+              <img src="https://res.cloudinary.com/nzmai/image/upload/v1605791181/icons/wrong.png"/>
+            </div>
+            <div class="desc-container">
+              <span class="motivational-word">Correct solution</span>
+              <span class="report">REPORT</span>
+            </div>
+            
+          </div>
+          <div class="item"></div>
+          <div class="item center">
+          </div>
+          <div class="item"></div>
+          <div class="item right">
+            <button class="continue-button-fail">계속</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./data.js"></script>
+  <script src="./answkd.js"></script>
+</html>

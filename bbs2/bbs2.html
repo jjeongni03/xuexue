@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bbs2/bbs2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script async type="text/javascript" src="/bbs/tjdwh.js"></script>
+    <title>쉬워쉬워 | 회화</title>
+    <link rel="icon" type="image/png" href="/로고.png">
+  </head>
+
+  <body>
+        <!--햄버거메뉴-->
+        <div class="wrapper">
+  
+            <div class="top_navbar">
+              <div class="hamburger">
+                 <div class="one"></div>
+                 <div class="two"></div>
+                 <div class="three"></div>
+              </div>
+              <div class="top_menu">
+                <div class="logo">
+                  *XueXue*쉬워쉬워*
+                </div>
+                <ul class="navigation">
+                  <li><a href="/index.html" class="active">Home</a></li>
+                  <li><a href="/conversation/cvs.html">회화</a></li>
+                  <li><a href="/card/card.html">단어</a></li>
+                  <li><a href="/quiz/quiz.html">퀴즈</a></li>
+                  <li><a href="/noticeboard/index.html">Q&A</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="sidebar">
+              <ul>
+                <li><a href="/conversation/cvs.html">
+                  <span class="icon"><i class="fas fa-home">‌</i></span>
+                  <span class="title">Home</span>
+                  </a></li>
+                <li><a href="/bbs/tjdwh.html">
+                  <span class="icon"><i class="fas fa-leaf">‌</i></span>
+                  <span class="title">성조</span>
+                  </a></li>
+                <li><a href="/bbs1/bbs1.html">
+                  <span class="icon"><i class="fas fa-hand-sparkles">‌</i></span>
+                  <span class="title">회화1</span>
+                  </a></li>
+                <li><a href="/bbs2/bbs2.html">
+                  <span class="icon"><i class="fas fa-hamburger"></i></span>
+                  <span class="title">회화2</span>
+                  </a></li>
+              <li><a href="/bbs3/bbs3.html">
+                  <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+                  <span class="title">회화3</span>
+                  </a></li>
+            </ul>
+            </div>
+            
+            <div class="main_container">
+             
+            </div>
+          </div>
+  
+  </body>  
+
+
+<!--멀티스텝/https://www.geeksforgeeks.org/how-to-create-a-multi-step-progress-bar-in-html-css-javascript/-->
+<div class="container"> 
+    <div class="progress-container"> 
+        <ul id="progressbar"> 
+            <li class="active" 
+                id="step1"> 
+                <strong>Step 1</strong> 
+            </li> 
+            <li id="step2"> 
+                  <strong>Step 2</strong> 
+              </li> 
+              <li id="step2"> 
+                <strong></strong> 
+            </li> 
+            <li id="step2"> 
+              <strong></strong> 
+          </li> 
+          <li id="step2"> 
+            <strong></strong> 
+        </li> 
+            <li id="step3"> 
+                  <strong>Step 3</strong> 
+              </li> 
+            <li id="step4"> 
+                  <strong>Step 4</strong> 
+              </li> 
+        </ul> 
+        <div class="progress"> 
+            <div class="progress-bar"></div> 
+        </div> 
+    </div> 
+    <div class="step-container"> 
+        <fieldset> 
+          <h2>Step 1. 어디있어요?</h2> 
+          <div align="center"><video src="/conversation/회화2.mp4" controls="controls"  width="80%" height="40%" ></video></div>     
+              
+            <input type="button"
+                   name="next-step"
+                   class="next-step"
+                   value="다음" /> 
+        </fieldset> 
+        <fieldset> 
+          <h2>Step 2. 단어 따라쓰기</h2> 
+          <table  style="margin-left:auto;margin-right:auto;">
+            <tr>
+            <td align="center"><img src="/bbs2/zai.gif">
+            <h3>在, zài, 있다</h3>
+            </td>
+            <td align="center">
+              <canvas id="canvas1" width="500" height="400"></canvas>
+              <div class="toolbox">
+             <button id="decrease">-</button>
+             <span id="size">10</span>
+             <button id="increase">+</button>
+             <input type="color" id="color" />
+             <button id="clear">X</button>
+             </div>
+            </tr>
+           </table>
+            <input type="button"
+                   name="next-step" 
+                   class="next-step" 
+                   value="다음" /> 
+            <input type="button"
+                   name="previous-step" 
+                   class="previous-step" 
+                   value="이전" /> 
+        </fieldset> 
+        <fieldset> 
+          <h2>Step 2. 단어 따라쓰기</h2> 
+          <table  style="margin-left:auto;margin-right:auto;">
+            <tr>
+            <td align="center"><img src="/bbs2/na.gif">
+            <h3>哪, nǎ, 어디</h3>
+            </td>
+            <td align="center">
+              <canvas id="canvas2" width="500" height="400"></canvas>
+              <div class="toolbox">
+             <button id="decrease">-</button>
+             <span id="size">10</span>
+             <button id="increase">+</button>
+             <input type="color" id="color" />
+             <button id="clear">X</button>
+             </div>
+            </tr>
+           </table>
+            <input type="button"
+                   name="next-step" 
+                   class="next-step" 
+                   value="다음" /> 
+            <input type="button"
+                   name="previous-step" 
+                   class="previous-step" 
+                   value="이전" /> 
+        </fieldset> 
+        <fieldset> 
+          <h2>Step 2. 단어 따라쓰기</h2> 
+          <table  style="margin-left:auto;margin-right:auto;">
+            <tr>
+            <td align="center"><img src="/bbs2/zhen.gif">
+            <h3>真, zhēn, 진짜</h3>
+            </td>
+            <td align="center">
+              <canvas id="canvas3" width="500" height="400"></canvas>
+              <div class="toolbox">
+             <button id="decrease">-</button>
+             <span id="size">10</span>
+             <button id="increase">+</button>
+             <input type="color" id="color" />
+             <button id="clear">X</button>
+             </div>
+            </tr>
+           </table>
+            <input type="button"
+                   name="next-step" 
+                   class="next-step" 
+                   value="다음" /> 
+            <input type="button"
+                   name="previous-step" 
+                   class="previous-step" 
+                   value="이전" /> 
+        </fieldset> 
+        <fieldset> 
+          <h2>Step 2. 단어 따라쓰기</h2> 
+          <table style="margin-left:auto;margin-right:auto;">
+            <tr>
+            <td align="center"><img src="/bbs2/kuai.gif">
+            <h3>快, kuài, 곧</h3>
+            </td>
+            <td align="center">
+              <canvas id="canvas4" width="500" height="400"></canvas>
+              <div class="toolbox">
+             <button id="decrease">-</button>
+             <span id="size">10</span>
+             <button id="increase">+</button>
+             <input type="color" id="color" />
+             <button id="clear">X</button>
+             </div>
+            </tr>
+           </table>
+            <input type="button"
+                   name="next-step" 
+                   class="next-step" 
+                   value="다음" /> 
+            <input type="button"
+                   name="previous-step" 
+                   class="previous-step" 
+                   value="이전" /> 
+        </fieldset> 
+        <fieldset> 
+          <h2>Step 3. 문장 완성하기</h2> 
+          <iframe width="100%" height="700" src="/answkd 1/answkd1.html" frameborder="0" allowfullscreen marginwidth="0" marginheight="0"></iframe>
+            <input type="button" 
+                   name="next-step" 
+                   class="next-step" 
+                   value="다음" /> 
+            <input type="button" 
+                   name="previous-step" 
+                   class="previous-step" 
+                   value="이전" /> 
+        </fieldset> 
+        <fieldset> 
+          <div class="finish"> 
+              <h2 class="text"> 
+                  <strong>step 4. 따라 말하기</strong> 
+              </h2> 
+              <iframe width="500" height="700" src="/chat1/chat1.html" frameborder="0" allowfullscreen marginwidth="10" marginheight="10"></iframe>
+          </div> 
+          <input type="button" 
+                 name="previous-step" 
+                 class="previous-step"
+                 value="이전" /> 
+      </fieldset> 
+    </div> 
+</div> 
+
+      <!--스크립트-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+      <script src="/bbs/script.js"></script> 
+      <script src="/bbs2/draw2.js"></script> 
+      <script src="/answkd 1/data1.js"></script>
+      <script src="/answkd 1/answkd1.js"></script>
+      <script src="/chat1/chat1.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="https://code.responsivevoice.org/responsivevoice.js?key=zz1dFgnN"></script>
+
+  </html>
